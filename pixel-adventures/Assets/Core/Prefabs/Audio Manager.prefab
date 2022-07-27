@@ -145,3 +145,4 @@ MonoBehaviour:
   enemySFX:
   - {fileID: 8300000, guid: 40cc02b00c05c144da9cdbab4f1166d1, type: 3}
   - {fileID: 8300000, guid: 1db2563e00bc827428ef4eb02097a199, type: 3}
+  audioClipLength: 0.3
