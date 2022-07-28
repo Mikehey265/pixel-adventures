@@ -25,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
     Material defaultMaterial;
     bool canTakeDamage;
     bool isDead;
+    int currentSceneIndex;
         
     #endregion
 
@@ -90,9 +91,10 @@ public class PlayerHealth : MonoBehaviour
     }
 
     private IEnumerator RespawnRoutine(){
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         yield return new WaitForSeconds(respawnTime);
         Destroy(PlayerController.Instance.gameObject);
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(currentSceneIndex);
     }
         
     #endregion
