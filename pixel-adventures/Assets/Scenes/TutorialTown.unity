@@ -38464,19 +38464,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8208426544808391317, guid: 66a19284b9a67d343b6d2df95a875622, type: 3}
       propertyPath: lines.Array.data[1]
-      value: Help stranger. We have giant mushrooms in our cave!!!
+      value: Help stranger! We have giant mushrooms in our cave!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208426544808391317, guid: 66a19284b9a67d343b6d2df95a875622, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: n-Mike
       objectReference: {fileID: 0}
     - target: {fileID: 8208426544808391317, guid: 66a19284b9a67d343b6d2df95a875622, type: 3}
       propertyPath: lines.Array.data[3]
-      value: What
+      value: Where are they?
       objectReference: {fileID: 0}
     - target: {fileID: 8208426544808391317, guid: 66a19284b9a67d343b6d2df95a875622, type: 3}
       propertyPath: lines.Array.data[5]
-      value: GIANT MUSHROOMS
+      value: In the cave up north
+      objectReference: {fileID: 0}
+    - target: {fileID: 8208426544808391317, guid: 66a19284b9a67d343b6d2df95a875622, type: 3}
+      propertyPath: lines.Array.data[6]
+      value: n-Mike
       objectReference: {fileID: 0}
     - target: {fileID: 8208426544808391317, guid: 66a19284b9a67d343b6d2df95a875622, type: 3}
       propertyPath: lines.Array.data[7]
-      value: Sure thing
+      value: I'll hadle them
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66a19284b9a67d343b6d2df95a875622, type: 3}

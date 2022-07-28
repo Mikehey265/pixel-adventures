@@ -69,7 +69,7 @@ public class DialogueManager : Singleton<DialogueManager>
             nameText.text = dialogueLines[currentLine].Replace(startsWithSignifierString, "");
             currentLine++;
 
-            if(nameText.text == "Seba"){
+            if(nameText.text == "Mike"){
                 portraitWindow.GetComponent<Image>().sprite = PlayerController.Instance.portrait;
             }else{
                 portraitWindow.GetComponent<Image>().sprite = DialogueActivator.FindObjectOfType<DialogueActivator>().portrait;
