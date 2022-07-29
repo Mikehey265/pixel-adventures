@@ -38605,6 +38605,10 @@ PrefabInstance:
       propertyPath: theEntrance
       value: 
       objectReference: {fileID: 190080271}
+    - target: {fileID: 2867137438403535722, guid: bdda3ac290599804c8bd29b4a6b12e5c, type: 3}
+      propertyPath: areaLoadTime
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2867137438403535723, guid: bdda3ac290599804c8bd29b4a6b12e5c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -38652,6 +38656,10 @@ PrefabInstance:
     - target: {fileID: 2867137438403535724, guid: bdda3ac290599804c8bd29b4a6b12e5c, type: 3}
       propertyPath: m_Name
       value: AreaExit
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867137438607573661, guid: bdda3ac290599804c8bd29b4a6b12e5c, type: 3}
+      propertyPath: areaLoadTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2867137438607573662, guid: bdda3ac290599804c8bd29b4a6b12e5c, type: 3}
       propertyPath: m_LocalPosition.y

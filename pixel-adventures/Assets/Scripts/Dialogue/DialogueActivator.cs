@@ -7,6 +7,7 @@ public class DialogueActivator : MonoBehaviour
     [SerializeField] public Sprite portrait;
     public string[] lines;
     public bool isPerson;
+    public bool canActivate;
         
     #endregion
 
@@ -14,7 +15,6 @@ public class DialogueActivator : MonoBehaviour
 
     [SerializeField] GameObject buttonUI;
     PlayerControls playerControls;
-    bool canActivate;
     const string player = "Player";
         
     #endregion

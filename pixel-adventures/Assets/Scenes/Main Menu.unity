@@ -2207,14 +2207,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4321506459311111662, guid: cd934510c81c541488f6db039cc8c55d, type: 3}
-      propertyPath: menuSFX.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4321506459311111662, guid: cd934510c81c541488f6db039cc8c55d, type: 3}
-      propertyPath: menuSFX.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 3fd90a6f4c971ee47a21c9e1666567d6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd934510c81c541488f6db039cc8c55d, type: 3}
 --- !u!1 &1795294997

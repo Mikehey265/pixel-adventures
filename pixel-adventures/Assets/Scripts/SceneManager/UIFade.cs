@@ -4,13 +4,10 @@ using UnityEngine.UI;
 
 public class UIFade : Singleton<UIFade>
 {
-    public Image fadeScreen;
-
     #region Private Variables
 
+    [SerializeField] Image fadeScreen;
     [SerializeField] float fadeSpeed;
-    bool shouldFadeToBlack;
-    bool shouldFadeFromBlack;
     IEnumerator fadeRoutine;
         
     #endregion
