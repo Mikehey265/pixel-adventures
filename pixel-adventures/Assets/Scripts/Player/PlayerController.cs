@@ -27,6 +27,8 @@ public class PlayerController : Singleton<PlayerController>
     [SerializeField] GameObject hitBox_Left;
     [SerializeField] GameObject hitBox_Right;
 
+    [SerializeField] float attackDelay;
+
     PlayerControls playerControls;
     enum GameState {Playing, Paused};
     GameState currentGameState;
@@ -192,7 +194,7 @@ public class PlayerController : Singleton<PlayerController>
         if(canAttack && currentGameState != GameState.Paused){
             rb.velocity = Vector2.zero;
             canMove = false;
-            animator.SetTrigger("attack");
+            StartCoroutine(AttackDelay(attackDelay));
         }
     }
 
@@ -202,6 +204,13 @@ public class PlayerController : Singleton<PlayerController>
             canMove = false;
             animator.SetTrigger("useItem");
         }
+    }
+
+    private IEnumerator AttackDelay(float delay){
+        animator.SetTrigger("attack");
+        canAttack = false;
+        yield return new WaitForSeconds(delay);
+        canAttack = true;
     }
 
     #endregion

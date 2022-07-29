@@ -141,8 +141,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b38e509297d5c0f44a8929e36ec83ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 4321506459311111663}
   enemySFX:
   - {fileID: 8300000, guid: 40cc02b00c05c144da9cdbab4f1166d1, type: 3}
   - {fileID: 8300000, guid: 1db2563e00bc827428ef4eb02097a199, type: 3}
+  menuSFX:
+  - {fileID: 8300000, guid: 3fd90a6f4c971ee47a21c9e1666567d6, type: 3}
+  audioSource: {fileID: 4321506459311111663}
   audioClipLength: 0.3

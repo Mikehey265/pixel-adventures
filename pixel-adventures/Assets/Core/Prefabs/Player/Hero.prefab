@@ -307,6 +307,7 @@ MonoBehaviour:
   hitBox_Bottom: {fileID: 3204290679261957779}
   hitBox_Left: {fileID: 3793794338662628057}
   hitBox_Right: {fileID: 3097621460701527088}
+  attackDelay: 0.4
 --- !u!114 &6487666779986491579
 MonoBehaviour:
   m_ObjectHideFlags: 0
