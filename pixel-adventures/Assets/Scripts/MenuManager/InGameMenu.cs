@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InGameMenu : Singleton<InGameMenu>
 {
     #region Private Variables
 
     [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject pausePanel;
+    [SerializeField] GameObject settingsMenu;
     [SerializeField] GameObject[] uiElements;
     PlayerControls playerControls;
     List<GameObject> uiEnabledBeforePause = new List<GameObject>();
@@ -45,6 +48,7 @@ public class InGameMenu : Singleton<InGameMenu>
         Time.timeScale = 1;
         PlayerController.Instance.canMove = true;
         PlayerController.Instance.canAttack = true;
+        PlayerController.Instance.ToggleGameState();
         gamePaused = false;
         pauseMenu.SetActive(false);
 
@@ -53,6 +57,28 @@ public class InGameMenu : Singleton<InGameMenu>
         }
 
         uiEnabledBeforePause.Clear();
+    }
+
+    public void MainMenu(){
+        SceneManager.LoadScene(0);
+        Destroy(Singleton<PlayerController>.Instance.gameObject);
+        Destroy(Singleton<AudioManager>.Instance.gameObject);
+        Destroy(Singleton<InventoryManager>.Instance.gameObject);
+        Destroy(Singleton<CameraController>.Instance.gameObject);
+    }
+
+    public void SettingsMenu(){
+        settingsMenu.SetActive(true);
+        pausePanel.SetActive(false);
+    }
+
+    public void BackFromSettings(){
+        settingsMenu.SetActive(false);
+        pausePanel.SetActive(true);
+    }
+
+    public void QuitGame(){
+        Application.Quit();
     }
 
     #endregion
@@ -64,6 +90,7 @@ public class InGameMenu : Singleton<InGameMenu>
             Time.timeScale = 0;
             PlayerController.Instance.canMove = false;
             PlayerController.Instance.canAttack = false;
+            PlayerController.Instance.ToggleGameState();
             gamePaused = true;
             pauseMenu.SetActive(true);
 

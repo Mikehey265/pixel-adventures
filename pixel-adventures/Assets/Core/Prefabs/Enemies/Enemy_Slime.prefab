@@ -182,9 +182,6 @@ MonoBehaviour:
   whiteFlashMaterial: {fileID: 2100000, guid: 52c6cabe18a9a1d42bbf7e7ad4930379, type: 2}
   whiteFlashTime: 0.1
   deathVFX: {fileID: 1110264763428426, guid: b2d9a04fd4116544a8364081c10eb8af, type: 3}
-  clips:
-  - {fileID: 8300000, guid: 40cc02b00c05c144da9cdbab4f1166d1, type: 3}
-  - {fileID: 8300000, guid: 1db2563e00bc827428ef4eb02097a199, type: 3}
 --- !u!114 &6450641192209918662
 MonoBehaviour:
   m_ObjectHideFlags: 0
