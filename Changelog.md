@@ -1,6 +1,35 @@
 # Changelog
 
 
+## Version 0.0.4.1 Bugfixes (02.08.22)<br/>
+<br/>
+Bugfixes<br/>
+-white outline in pause menu is no more<br/>
+-there are no more double event systems and audio listeners in main menu<br/>
+-current equipped item is no longer changing itself to null after clicking any button in pause menu<br/>
+-fixed an issue where player couldn't use current equipped item at the start of a game<br/>
+
+
+## Version 0.0.4.0 (31.07.22)<br/>
+<br/>
+Added<br/>
+-new sounds for destroying bushes, pots, boulders<br/>
+-new sounds for attacking with sword, and bomb explosion<br/>
+<br/>
+New Features<br/>
+-pause menu system<br/>
+<br/>
+Bugfixes<br/>
+-changing scenes seems to be working now, when starting a game through main menu (as it should be)<br/>
+<br/>
+Known Issues<br/>
+-if player use pause menu and come back to main menu, he can't start a game again<br/>
+-if player use boomerang, he can still use "use item" animation<br/>
+-dialogue text not aligning properly with portraits<br/>
+
+
+
+
 ## Version 0.0.3.0 (29.07.22)<br/>
 <br/>
 Added<br/>
