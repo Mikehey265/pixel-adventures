@@ -19,8 +19,10 @@ public class Breakable : MonoBehaviour
         switch(objectType){
             case ObjectType.pot:
                 Instantiate(blueRupee, transform.position, Quaternion.identity);
+                AudioManager.Instance.PlayDestructionSFX(AudioManager.Instance.destructionSFX[1]);
                 break;
             case ObjectType.bush:
+            AudioManager.Instance.PlayDestructionSFX(AudioManager.Instance.destructionSFX[0]);
                 break;
         }
 

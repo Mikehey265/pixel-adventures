@@ -8,13 +8,16 @@ public class AudioManager : Singleton<AudioManager>
 
     [SerializeField] public AudioClip[] enemySFX;
     [SerializeField] public AudioClip[] menuSFX;
+    [SerializeField] public AudioClip[] destructionSFX;
 
     #endregion
 
     #region Private Variables
 
+    [SerializeField] AudioClip explosionSFX;
+    [SerializeField] AudioClip attackSFX; 
     [SerializeField] AudioSource audioSource;
-    [SerializeField] float audioClipLength = 0.3f;
+    [SerializeField] float audioVolumeScale = 0.3f;
 
     #endregion
 
@@ -29,11 +32,23 @@ public class AudioManager : Singleton<AudioManager>
     #region Public Methods
 
     public void PlayEnemySFX(AudioClip audioClip){
-        audioSource.PlayOneShot(audioClip, audioClipLength);
+        audioSource.PlayOneShot(audioClip, audioVolumeScale);
     }
 
     public void PlayMenuSFX(AudioClip audioClip){
-        audioSource.PlayOneShot(audioClip, audioClipLength);
+        audioSource.PlayOneShot(audioClip, audioVolumeScale);
+    }
+
+    public void PlayDestructionSFX(AudioClip audioClip){
+        audioSource.PlayOneShot(audioClip, audioVolumeScale);
+    }
+
+    public void PlayExplosionSFX(){
+        audioSource.PlayOneShot(explosionSFX, audioVolumeScale);
+    }
+
+    public void PlayAttackSFX(){
+        audioSource.PlayOneShot(attackSFX, audioVolumeScale);
     }
 
     #endregion

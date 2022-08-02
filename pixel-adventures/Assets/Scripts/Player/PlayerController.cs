@@ -208,6 +208,7 @@ public class PlayerController : Singleton<PlayerController>
 
     private IEnumerator AttackDelay(float delay){
         animator.SetTrigger("attack");
+        AudioManager.Instance.PlayAttackSFX();
         canAttack = false;
         yield return new WaitForSeconds(delay);
         canAttack = true;
