@@ -35,4 +35,9 @@ Pixel Adventures is still in early development, definitly not ready to be played
 
 * Most of the assets and animations for now are from GameDev.tv Starter Kit: https://www.gamedev.tv/p/unity-2d-rpg-starter-kit
 * Sounds are from: https://www.gamedevmarket.net/asset/orcs-and-beast-sfx-pack-2187/
+https://opengameart.org/content/2-high-quality-explosions
+https://opengameart.org/content/3-melee-sounds
+https://opengameart.org/content/20-rustles-dry-leaves
+https://opengameart.org/content/75-cc0-breaking-falling-hit-sfx
+https://opengameart.org/content/moving-boulder
 * Baloon icons are from: https://www.gamedevmarket.net/asset/10-animated-balloon-icons/
