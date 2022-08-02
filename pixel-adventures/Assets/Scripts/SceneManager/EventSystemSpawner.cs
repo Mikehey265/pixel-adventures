@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 public class EventSystemSpawner : MonoBehaviour
 {
     [SerializeField] GameObject eventSystemPrefab;
-    [SerializeField] GameObject firstSelectedInventoryObject;
+    [SerializeField] public GameObject firstSelectedInventoryObject;
 
     private void Start() {
         EventSystem sceneEventSystem = FindObjectOfType<EventSystem>();

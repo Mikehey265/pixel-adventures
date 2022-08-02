@@ -146,5 +146,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1db2563e00bc827428ef4eb02097a199, type: 3}
   menuSFX:
   - {fileID: 8300000, guid: 3fd90a6f4c971ee47a21c9e1666567d6, type: 3}
+  destructionSFX:
+  - {fileID: 8300000, guid: 21ea0f5503220904a8e7732ad0c7aa9b, type: 3}
+  - {fileID: 8300000, guid: 5ee57ada1d7d6e54287ea641582afc7e, type: 3}
+  - {fileID: 8300000, guid: 717e69a80767af143adf21c0ccb5502d, type: 3}
+  movementSFX: {fileID: 8300000, guid: 991bb84313949f04e9feadd8a5c5de36, type: 3}
+  explosionSFX: {fileID: 8300000, guid: 6a94db245c15dc445837eadbc1f4df79, type: 3}
+  attackSFX: {fileID: 8300000, guid: cac791896900769439366af452e75391, type: 3}
   audioSource: {fileID: 4321506459311111663}
-  audioClipLength: 0.3
+  audioVolumeScale: 0.3

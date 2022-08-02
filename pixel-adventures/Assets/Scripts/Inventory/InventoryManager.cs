@@ -34,10 +34,13 @@ public class InventoryManager : Singleton<InventoryManager>
 
     private void Start() {
         playerControls.Inventory.OpenInventory.performed += _ => OpenInventoryContainer();
+        DetectIfItemChange();
     }
 
     private void Update() {
-        DetectIfItemChange();
+        if(inventoryContainer.activeInHierarchy == true){
+            DetectIfItemChange();
+        }
     }
 
     private void OnEnable() {
