@@ -1,6 +1,27 @@
 # Changelog
 
 
+## Version 0.0.5.0 (22.08.22)<br/>
+</br>
+Added</br>
+-new Main Menu and Pause Menu design</br>
+</br>
+New Features</br>
+-options menu </br>
+-submenus for sound, graphics and gameplay</br>
+-working fullscreen toggle, change of resolution and music volume</br>
+-all settings are now being saved</br>
+</br>
+Bugfixes</br>
+-fixed an issue where player can't start a game after coming back to main menu</br>
+-fixed an issue where pause menu opens only once</br>
+</br>
+Known Issues</br>
+-if player use boomerang, he can still use "use item" animation<br/>
+-dialogue text not aligning properly with portraits<br/>
+
+
+
 ## Version 0.0.4.1 Bugfixes (02.08.22)<br/>
 <br/>
 Bugfixes<br/>
