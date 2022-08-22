@@ -8,12 +8,11 @@ public class InGameMenu : Singleton<InGameMenu>
     #region Private Variables
 
     [SerializeField] GameObject pauseMenu;
-    [SerializeField] GameObject pausePanel;
-    [SerializeField] GameObject settingsMenu;
     [SerializeField] GameObject[] uiElements;
     PlayerControls playerControls;
     List<GameObject> uiEnabledBeforePause = new List<GameObject>();
     bool gamePaused;
+    bool canClickEsc;
 
     #endregion
 
@@ -45,10 +44,12 @@ public class InGameMenu : Singleton<InGameMenu>
     #region Public Methods
 
     public void ResumeGame(){
+        if(gamePaused && pauseMenu.activeInHierarchy == false) return;
         Time.timeScale = 1;
         PlayerController.Instance.canMove = true;
         PlayerController.Instance.canAttack = true;
         PlayerController.Instance.ToggleGameState();
+        AudioManager.Instance.PlayMenuSFX(AudioManager.Instance.menuSFX[0]);
         gamePaused = false;
         pauseMenu.SetActive(false);
 
@@ -60,25 +61,12 @@ public class InGameMenu : Singleton<InGameMenu>
     }
 
     public void MainMenu(){
+        AudioManager.Instance.PlayMenuSFX(AudioManager.Instance.menuSFX[0]);
         SceneManager.LoadScene(0);
         Destroy(Singleton<PlayerController>.Instance.gameObject);
         Destroy(Singleton<AudioManager>.Instance.gameObject);
         Destroy(Singleton<InventoryManager>.Instance.gameObject);
         Destroy(Singleton<CameraController>.Instance.gameObject);
-    }
-
-    public void SettingsMenu(){
-        settingsMenu.SetActive(true);
-        pausePanel.SetActive(false);
-    }
-
-    public void BackFromSettings(){
-        settingsMenu.SetActive(false);
-        pausePanel.SetActive(true);
-    }
-
-    public void QuitGame(){
-        Application.Quit();
     }
 
     #endregion
