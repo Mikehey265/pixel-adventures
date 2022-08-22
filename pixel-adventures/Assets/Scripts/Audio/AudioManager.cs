@@ -9,6 +9,7 @@ public class AudioManager : Singleton<AudioManager>
     [SerializeField] public AudioClip[] enemySFX;
     [SerializeField] public AudioClip[] menuSFX;
     [SerializeField] public AudioClip[] destructionSFX;
+    [SerializeField] public float audioVolumeScale = 0.3f;
 
     #endregion
 
@@ -17,7 +18,6 @@ public class AudioManager : Singleton<AudioManager>
     [SerializeField] AudioClip explosionSFX;
     [SerializeField] AudioClip attackSFX; 
     [SerializeField] AudioSource audioSource;
-    [SerializeField] float audioVolumeScale = 0.3f;
 
     #endregion
 
